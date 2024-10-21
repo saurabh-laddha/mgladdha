@@ -1,8 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }}</title>
-
-  <!-- Link to custom CSS file -->
   <link rel="stylesheet" href="/assets/css/main.css">
 </head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li><a href="/">Home</a></li>
+        <li><a href="/privacypolicy">Privacy Policy</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Your Website Name</p>
+  </footer>
+</body>
+</html>
